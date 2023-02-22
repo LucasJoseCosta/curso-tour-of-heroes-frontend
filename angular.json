@@ -57,7 +57,13 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -69,7 +75,8 @@
               "browserTarget": "curso-tour-of-heroes-frontend:build:production"
             },
             "development": {
-              "browserTarget": "curso-tour-of-heroes-frontend:build:development"
+              "browserTarget": "curso-tour-of-heroes-frontend:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
