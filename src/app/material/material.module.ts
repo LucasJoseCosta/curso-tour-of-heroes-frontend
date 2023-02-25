@@ -11,6 +11,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const MODULES = [
   MatButtonModule,
@@ -24,6 +25,7 @@ const MODULES = [
   MatInputModule,
   MatTableModule,
   MatSnackBarModule,
+  MatDialogModule,
 ];
 
 @NgModule({
